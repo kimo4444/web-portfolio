@@ -1,15 +1,19 @@
 {
-  "short_name": "Olga Kim",
-  "name": "Olga Kim, fullstack web developer",
-  "icons": [
-    {
-      "src":"favicon.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#e5e9e4",
-  "theme_color": "#e5e9e4",
-  "display": "standalone"
+    "name": "Olga Kim's portfolio",
+    "short_name": "O Kim port",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#FEFEFE",
+    "theme_color": "#333333",
+    "icons": [
+      { "src": "/favIcon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+ },
+
+      {
+        "src": "/favicon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }]
 }

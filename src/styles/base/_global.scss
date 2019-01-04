@@ -1,0 +1,83 @@
+// base
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+  padding: 0;
+}
+
+div,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  color: $grey;
+}
+a {
+  display: block;
+  color: black;
+  cursor: pointer;
+}
+
+li {
+  margin-left: 0;
+}
+
+ul {
+  margin: 0;
+}
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.button {
+  width: 16rem;
+  font-size: 1.4rem;
+  color: $grey;
+  text-align: center;
+  display: block;
+  padding: 0.3rem;
+  border-radius: 4px;
+  border: lighten($grey, 10%) 1px solid;
+  margin-top: 14%;
+  float: right;
+  -webkit-appearance: none;
+  &:hover {
+    animation: pull 0.6s forwards;
+  }
+}
+
+.header {
+  margin-top: 5%;
+  font-size: 1.8rem;
+  margin: 0.8rem 0 0.3rem;
+  color: dimgrey;
+}
+
+@keyframes pull {
+  from {
+    padding-right: 0;
+  }
+
+  to {
+    padding-right: 2rem;
+  }
+}
+.arrow {
+  font-size: 1rem;
+}
+
+@font-face {
+  font-family: sans-serif;
+  font-display: swap;
+}

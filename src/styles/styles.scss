@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:400,700|Montserrat:400,500');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700|Montserrat:400,500');
 @import './base/settings';
-@import './base/base';
-@import './components/Navigation';
+@import './base/global';
 @import './components/WorkGallery';
+@import './components/Navigation';
 @import './components/Project';
 @import './components/Contact';
 @import './components/About';
-@import './components/responsive';
+@import './components/Responsive';
