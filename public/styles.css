@@ -3,14 +3,19 @@
   box-sizing: border-box;
   text-decoration: none; }
 
-body, html {
+body,
+html {
   margin: 0;
   height: 100%;
   width: 100%;
   font-size: 62.5%;
   padding: 0; }
 
-div, h1, h2, h3, h4 {
+div,
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
   color: #333542; }
@@ -26,6 +31,11 @@ li {
 ul {
   margin: 0; }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 .button {
   width: 16rem;
   font-size: 1.4rem;
@@ -36,7 +46,8 @@ ul {
   border-radius: 4px;
   border: #494c5f 1px solid;
   margin-top: 14%;
-  float: right; }
+  float: right;
+  -webkit-appearance: none; }
   .button:hover {
     animation: pull 0.6s forwards; }
 
@@ -60,7 +71,7 @@ ul {
   font-display: swap; }
 
 .landing-page {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
   height: 100%;
   margin: 0;
@@ -147,7 +158,6 @@ ul {
 .skills {
   width: 55%;
   margin: 5% auto;
-  padding-bottom: 30rem;
   text-align: center; }
   .skills img {
     width: 100%; }
@@ -171,17 +181,13 @@ ul {
   margin-top: 42rem; }
 
 footer {
-  height: 27rem;
+  height: 25rem;
   width: 100%;
   background-color: #e7ebe6;
-  position: absolute;
-  bottom: 0;
   -webkit-clip-path: polygon(0 4%, 100% 22%, 100% 100%, 0 100%);
   clip-path: polygon(0 4%, 100% 22%, 100% 100%, 0 100%); }
 
 .copyright {
-  position: absolute;
-  bottom: 2.5rem;
   width: 100%;
   text-align: center;
   font-size: 1.5rem; }
@@ -200,7 +206,7 @@ footer {
   background-color: #e4e9e3;
   color: #454759;
   font-size: 4.5rem;
-  font-family: 'Zilla Slab Highlight', cursive;
+  font-family: "Zilla Slab Highlight", cursive;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 26%, 0 34%);
   clip-path: polygon(0 0, 100% 0%, 100% 26%, 0 34%); }
 
@@ -210,7 +216,9 @@ footer {
   right: 9rem;
   cursor: pointer;
   z-index: 3; }
-  .menu-icon .bar1, .menu-icon .bar2, .menu-icon .bar3 {
+  .menu-icon .bar1,
+  .menu-icon .bar2,
+  .menu-icon .bar3 {
     width: 3.9rem;
     height: 0.5rem;
     background-color: white;
@@ -220,7 +228,7 @@ footer {
 .menu__items {
   display: none;
   font-size: 3.7rem;
-  font-family: 'Zilla Slab Highlight', cursive;
+  font-family: "Zilla Slab Highlight", cursive;
   padding: 2%; }
 
 .menu__item {
@@ -280,7 +288,7 @@ footer {
 
 .project {
   margin: 7% auto 50rem;
-  width: 78%;
+  width: 75%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -295,26 +303,26 @@ footer {
 .project__description {
   width: 50%;
   padding-right: 5%;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: dimgrey;
-  line-height: 160%; }
+  line-height: 165%; }
   .project__description span {
-    font-family: 'Zilla Slab Highlight';
+    font-family: "Zilla Slab Highlight";
     word-spacing: 1rem;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: #54586d; }
 
 .project__images {
-  margin-top: 6%;
+  margin: 6% auto;
   width: 98%;
-  display: flex; }
+  display: flex;
+  text-align: center; }
 
 .project__image {
-  width: 35%;
+  width: 32%;
   border: 1px solid lightgrey;
-  justify-content: space-between;
-  margin-right: 2%;
+  margin: 1%;
   cursor: pointer; }
   .project__image:hover {
     -webkit-box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.4);
@@ -327,7 +335,10 @@ footer {
   width: 50%;
   border: 1px solid lightgrey; }
 
-input[type=text], input[type=email], select, textarea {
+input[type="text"],
+input[type="email"],
+select,
+textarea {
   width: 100%;
   padding: 1.4rem;
   border: 1px solid #ccc;
@@ -335,7 +346,7 @@ input[type=text], input[type=email], select, textarea {
   margin: 1rem 0;
   resize: vertical;
   font-size: 1.6rem;
-  font-family: 'Montserrat'; }
+  font-family: "Montserrat"; }
 
 textarea {
   height: 20rem; }
@@ -367,7 +378,8 @@ textarea {
     color: dimgrey; }
 
 @media only screen and (max-width: 1450px) {
-  .recent-project, .work-overview {
+  .recent-project,
+  .work-overview {
     width: 85%; } }
 
 @media only screen and (min-width: 1090px) {
@@ -450,17 +462,16 @@ textarea {
   .work-overview {
     width: 90%; }
   .project__description {
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
     padding: 0; }
   .project__img--main {
-    width: 85%;
-    margin: 3% 0 0 10%; }
-  .project__images {
-    width: 100%; } }
+    width: 94%;
+    margin: 2% auto; } }
 
 @media only screen and (max-width: 600px) {
-  .recent-project__description, .recent-project__img {
+  .recent-project__description,
+  .recent-project__img {
     width: 98%; }
   .work-overview {
     width: 78%; }
@@ -471,10 +482,6 @@ textarea {
     height: 72rem;
     padding: 14% 0 0 12%;
     font-weight: 400; }
-  .title--recent {
-    margin-top: 29rem;
-    width: 50%;
-    font-size: 1.4rem; }
   .menu-icon {
     top: 1.2rem;
     right: 1.6rem; }
@@ -483,7 +490,9 @@ textarea {
   .skills {
     width: 100%; }
   footer {
-    height: 23rem; }
+    height: 15rem; }
+  .section-title--recent {
+    margin-top: 28rem; }
   .work-overview__gallery {
     -webkit-column-count: 1;
     -moz-column-count: 1;
